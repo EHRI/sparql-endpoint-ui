@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family:'Neue Haas Unica';
     font-style:normal;
     font-weight:300;
@@ -28,7 +28,7 @@
     font-weight:700;
     src:url(../fonts/NeueHaasUnica-Bold.woff2) format("woff2"),
         url(../fonts/NeueHaasUnica-Bold.woff) format("woff")
-}
+}*/
 
 body {
     font-family: "Neue Haas Unica", sans-serif !important;
@@ -48,8 +48,12 @@ header {
     padding-top: 40px;
 }
 
-#logo img {
-    width: clamp(10rem,10vw,15rem);
+#logo #logoWrapper {
+    background-image: url(ehri-logo.svg);
+    background-size: 155px 124px;
+    width: 155px;
+    height: 124px;
+    margin-bottom: 1em;
 }
 
 #languages {
@@ -86,4 +90,13 @@ footer div {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+.controlbar {
+    display: block !important;
+    padding-bottom: 0.3em;
+}
+
+.yasgui .autocompleteWrapper {
+    display: none !important;
 }
